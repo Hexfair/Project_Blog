@@ -1,0 +1,14 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  color: var(--white);
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 65px auto;
+  background-color: var(--black);
+  min-height: 100vh;
+}

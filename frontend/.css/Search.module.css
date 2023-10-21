@@ -1,0 +1,9 @@
+.input {
+  background-color: var(--primary);
+  width: 400px;
+  height: 40px;
+  color: var(--white);
+  padding: 5px 20px;
+  font-size: 13px;
+  font-weight: 500;
+}

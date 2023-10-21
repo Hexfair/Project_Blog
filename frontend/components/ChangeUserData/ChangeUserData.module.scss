@@ -1,0 +1,100 @@
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: 0.15s show ease-in-out;
+}
+
+@keyframes show {
+	from { 
+		opacity: 0; 
+	}
+	to { 
+		opacity: 1; 
+	}
+ }
+
+
+.formBox {
+	position: relative;
+	width: 300px;
+	text-align: center;
+	background-color: var(--grey-dark);
+	padding: 20px 15px;
+	border-radius: 8px;
+
+	@media (max-width: 480px) {
+		width: 250px;
+	}
+}
+
+.title {
+	margin-bottom: 30px;
+	font-size: 18px;
+
+	@media (max-width: 480px) {
+		margin-bottom: 25px;
+		font-size: 16px;
+	}
+}
+
+.imageBox {
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.image {
+		position: relative;
+		width: 80px;
+		height: 80px;
+		margin-bottom: 15px;
+
+		img {
+			margin: 0 auto;
+			object-fit: contain;
+			border-radius: 8px;
+		}
+
+		@media (max-width: 480px) {
+			width: 60px;
+			height: 60px;
+		}
+	}
+
+	.removeImage {
+		margin-left: 20px;
+		background-color: transparent;
+		color: var(--red);
+		font-size: 14px;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+	
+		&:hover {
+			color: var(--grey-light);
+			text-decoration: underline;
+		}
+	}
+}
+
+.link {
+	margin-left: 40px;
+	font-size: 14px;
+	color: var(--white);
+	transition: all 0.3s ease 0s;
+	background-color: transparent;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+
+	&:hover {
+		color: var(--grey-light);
+		text-decoration: underline;
+	}
+}

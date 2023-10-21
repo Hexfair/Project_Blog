@@ -1,0 +1,103 @@
+.fullPost {
+  width: 750px;
+  padding: 15px;
+  margin: 35px auto 0px auto;
+  background-color: #202020;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back,
+.share {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--grey);
+  transition: all 0.1s ease 0s;
+}
+.back:hover,
+.share:hover {
+  color: var(--grey-light);
+}
+.back:hover:hover svg,
+.share:hover:hover svg {
+  fill: var(--grey-light);
+}
+
+.back span {
+  margin-left: 8px;
+}
+
+.share span {
+  margin-right: 8px;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.date,
+.tags {
+  font-size: 12px;
+  color: var(--grey);
+}
+
+.text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: var(--white);
+}
+.text img {
+  display: block;
+  margin: 0 auto;
+  max-height: 350px;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+}
+.image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.author {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  justify-items: start;
+}
+.author .edit {
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.author .edit svg path {
+  stroke: var(--grey-light);
+}
+.author .edit:hover svg path {
+  stroke: var(--aqua);
+}
+.author .remove {
+  margin-left: 10px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.author .remove svg {
+  fill: var(--grey-light);
+}
+.author .remove:hover svg {
+  fill: var(--aqua);
+}

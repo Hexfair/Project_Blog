@@ -1,0 +1,25 @@
+.button {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 100px;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+
+.aqua {
+  background-color: var(--aqua);
+  color: var(--black);
+}
+.aqua:hover {
+  background-color: var(--aqua-hover);
+}
+
+.grey {
+  background-color: var(--grey-light);
+  color: var(--black);
+}
+.grey:hover {
+  background-color: var(--white);
+}

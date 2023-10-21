@@ -1,0 +1,15 @@
+.content {
+	text-align: center;
+	min-height: 100vh;
+}
+
+.text {
+	text-align: left;
+	margin-bottom: 30px;
+	font-style: italic;
+	color: var(--grey);
+
+	& span {
+		color: var(--grey-light);
+	}
+}

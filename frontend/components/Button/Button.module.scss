@@ -1,0 +1,65 @@
+.button {
+	padding: 4px 8px;
+	border-radius: 8px;
+	font-size: 13px;
+	font-weight: 700;
+	min-width: 100px;
+	cursor: pointer;
+	transition: all 0.2s ease 0s;
+
+	@media (max-width: 480px) {
+		padding: 6px 4px;
+		border-radius: 5px;
+		font-size: 11px;
+	}
+}
+
+.aqua {
+	background-color: var(--aqua);
+	color: var(--black);
+
+	&:disabled {
+		background-color: var(--grey);
+		color: var(--white);
+
+		&:hover {
+			background-color: var(--grey);
+		}
+	}
+
+	&:hover {
+		background-color: var(--aqua-hover);
+	}
+}
+
+.grey {
+	background-color: var(--grey-light);
+	color: var(--black);
+
+	&:hover {
+		background-color: var(--white);
+	}
+}
+
+
+.spinner {
+	display: inline-block;
+	margin: 0 auto;
+	width: 12px;
+	height: 12px;
+	border: 3px solid transparent;
+	border-top-color: var(--white);
+	border-radius: 50%;
+	animation: button-loading-spinner 1s ease infinite;
+	cursor: wait;
+}
+
+@keyframes button-loading-spinner {
+	from {
+		transform: rotate(0turn);
+	}
+
+	to {
+		transform: rotate(1turn);
+	}
+}

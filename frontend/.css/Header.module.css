@@ -1,0 +1,13 @@
+.header {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  border-bottom: 1px solid var(--primary);
+  padding: 10px;
+  justify-items: center;
+}
+
+.logo {
+  text-align: center;
+  font-size: 32px;
+  color: var(--red);
+}

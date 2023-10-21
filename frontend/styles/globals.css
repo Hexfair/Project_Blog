@@ -1,0 +1,72 @@
+/* Clearance */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: none;
+	font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+html,
+body {
+	max-width: 100vw;
+}
+
+a {
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	background-color: var(--grey);
+}
+
+/* Colors */
+:root {
+	--primary: #1F2833;
+	--black: #0B0C10;
+	--aqua: #66FCF1;
+	--aqua-hover: #079e94;
+	--red: #FF8989;
+	--red-hover: #ef3a3a;
+	--white: #FFFFFF;
+	--grey-dark: #202020;
+	--grey-light: #C5C6C7;
+	--grey-light-opacity: #c5c6c718;
+	--grey: #8f8f8f;
+}
+
+/* SimpleMdeEditor */
+.editor-toolbar {
+	background-color: var(--primary);
+}
+
+.editor-toolbar button {
+	color: var(--grey);
+}
+
+.editor-toolbar button:hover {
+	color: var(--black);
+}
+
+.editor-toolbar i.separator {
+	border-right: 1px solid var(--grey) !important;
+	border-left: 1px solid var(--grey) !important;
+}
+
+.editor-toolbar {
+	border: 2px solid var(--white) !important;
+}
+
+.EasyMDEContainer .CodeMirror {
+	border: 2px solid var(--white) !important;
+}
+
+.CodeMirror .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
+	background: transparent;
+}
+
+.toastMessage {
+	font-size: 13px;
+	letter-spacing: 0.5px;
+}

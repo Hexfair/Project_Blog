@@ -1,0 +1,50 @@
+.comment {
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 15px;
+	column-gap: 10px;
+
+	@media (max-width: 480px) {
+		padding: 5px;
+		max-width: 100%;
+	}
+}
+
+.content {
+	border-bottom: 1px solid var(--grey-light-opacity);
+	padding-bottom: 10px;
+}
+
+.topLine {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.date {
+	font-size: 14px;
+	color: var(--grey);
+}
+
+.text {
+	color: var(--grey-light);
+	font-size: 12px;
+}
+
+.remove {
+	height: 15px;
+}
+
+.remove svg {
+	width: 15px;
+	fill: var(--grey);
+	transition: all 0.2s ease 0s;
+	cursor: pointer;
+
+	&:hover {
+		fill: var(--aqua);
+	}
+}
+

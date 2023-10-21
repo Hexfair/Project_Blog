@@ -1,0 +1,70 @@
+.inputBox {
+	margin-bottom: 40px;
+	position: relative;
+
+	@media (max-width: 480px) {
+		margin-bottom: 35px;
+	}
+}
+
+.inputBox input {
+	position: relative;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	color: var(--grey-light);
+	padding-bottom: 10px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	border-bottom: 2px solid var(--grey-light);
+	width: 100%;
+
+	@media (max-width: 730px) {
+		font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (730 - 320)));
+	}
+}
+
+.inputBox span {
+	position: absolute;
+	left: 0;
+	font-size: 16px;
+	font-weight: 300;
+	display: inline-block;
+	pointer-events: none;
+	letter-spacing: 1px;
+	color: var(--grey-light);
+	transition: all 0.2s;
+
+	@media (max-width: 730px) {
+		font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (730 - 320)));
+	}
+}
+
+.inputBox input:focus ~ span,
+.noEmpty input ~ span {
+	transform: translateY(-24px);
+	color: var(--aqua);
+	font-size: 14px;
+
+	@media (max-width: 730px) {
+		transform: translateY(-20px);
+		font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (730 - 320)));
+	}
+}
+
+.inputBox input:focus,
+.noEmpty input {
+	border-bottom-color: var(--aqua);
+}
+
+.inputError {
+	font-size: 12px;
+	color: var(--red);
+	margin-top: 3px;
+	font-weight: 300;
+
+	@media (max-width: 730px) {
+		font-size: calc(10px + (12 - 10) * ((100vw - 320px) / (730 - 320)));
+	}
+}

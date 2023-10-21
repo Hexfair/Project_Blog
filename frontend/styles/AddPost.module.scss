@@ -1,0 +1,84 @@
+.addPost {
+	width: 750px;
+	padding: 15px;
+	background-color: #202020;
+	position: relative;
+
+	@media (max-width: 1000px) {
+		width: calc(450px + (750 - 450) * ((100vw - 730px) / (1000 - 730)));
+	}
+
+	@media (max-width: 730px) {
+		width: calc(300px + (650 - 300) * ((100vw - 320px) / (730 - 320)));
+	}
+}
+
+.form {
+	margin: 0px auto 40px auto;
+}
+
+.formBox {
+	position: relative;
+}
+
+.title {
+	margin-bottom: 50px;
+}
+
+.link {
+	margin-left: 40px;
+	font-size: 14px;
+	color: var(--white);
+	transition: all 0.3s ease 0s;
+
+	&:hover {
+		color: var(--grey-light);
+		text-decoration: underline;
+	}
+}
+
+.imageBox {
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.image {
+		position: relative;
+		width: 400px;
+		height: 350px;
+		margin-bottom: 15px;
+
+		img {
+			margin: 0 auto;
+			object-fit: contain;
+			border-radius: 8px;
+		}
+
+		@media (max-width: 730px) {
+			width: calc(280px + (400 - 280) * ((100vw - 320px) / (730 - 320)));
+			height: calc(200px + (350 - 200) * ((100vw - 320px) / (730 - 320)));
+		}
+	}
+
+	.removeImage {
+		margin-left: 20px;
+		background-color: transparent;
+		color: var(--red);
+		font-size: 14px;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			color: var(--grey-light);
+			text-decoration: underline;
+		}
+	}
+}
+
+.editorNote {
+	text-align: right;
+	color: var(--grey-light);
+	font-size: 10px;
+}

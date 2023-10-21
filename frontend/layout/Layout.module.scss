@@ -1,0 +1,23 @@
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 230px 1fr;
+	color: var(--white);
+	height: 100%;
+	overflow-x: hidden;
+
+	@media (max-width: 730px) {
+		display: block;
+	}
+}
+
+.main {
+	background-color: var(--black);
+}
+
+.motionDiv {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}

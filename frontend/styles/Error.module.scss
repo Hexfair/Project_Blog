@@ -1,0 +1,15 @@
+.errorPage {
+	max-width: 600px;
+	text-align: center;
+	padding-top: 50px;
+	min-height: 100vh;
+
+	& h2 {
+		margin-bottom: 40px;
+	}
+
+	& p {
+		color: var(--grey-light);
+		margin-bottom: 20px;
+	}
+}
